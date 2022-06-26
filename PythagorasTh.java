@@ -15,6 +15,9 @@ public class PythagorasTh {
                                         .mapToObj(b ->
                                                 new int[]{a, b, (int)Math.sqrt(a * a + b * b)})
                         );
+         pythagoreanTriples.limit(5)
+                .forEach(t ->
+                        System.out.println(t[0] + ", " + t[1] + ", " + t[2]));
 
 
     }
